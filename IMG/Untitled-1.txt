@@ -1,0 +1,10 @@
+{
+  "configurations": [
+    {
+      "type": "pwa-chrome",
+      "request": "launch",
+      "name": "Launch pagina.html",
+      "file": "${workspaceFolder}/tarea/pagina.html"
+    }
+  ]
+}

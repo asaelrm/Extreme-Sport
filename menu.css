@@ -1,0 +1,159 @@
+/*
+Extreme Sport
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+.MenuH a{
+    background-color: rgb(255, 255, 255);
+    float: center;
+    color: #3799aa;
+    text-decoration: none;
+    width: 100px;
+    text-align: center;
+    padding: 10px;
+}
+
+.MenuH a:hover{
+    background-color: white;
+    color:black;
+}
+  
+/*
+  color de pagina
+  */
+  body {
+    background-color: #378bb3;
+    color: black;
+      font-family: 'Inter', poppins, sans-serif;
+      background: linear-gradient(to right, #376292, #39728d);
+       color: #ffffff;
+       min-height: 20vh;
+         justify-content: center;
+         align-items: center;
+          padding: 5%;
+          margin: 5%;
+        
+  }
+
+  nav {
+  background-color: white;
+  color: black;
+  padding: 10px;
+  position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Inter', poppins, sans-serif;
+    width: <= 600px;
+}
+
+section {
+  margin-top: 20px;
+  padding: 20px;
+  background-color: white;
+}
+
+.noticias {
+  background-color: white;
+    color: black;
+    display: flex;
+        font-family: 'Inter', poppins, sans-serif;
+        font-size: clamp (1rem, 6vw, 6rem);
+      background: linear-gradient(to right, #eceaea, #e4e6e5);
+       color: #333;
+         justify-content: center;
+         align-items: center;
+           padding: 20px;
+} 
+
+/*
+articulo 1
+*/
+.ar1 {
+  display: flex;
+  flex-direction: column;       
+  align-items: center;          
+  justify-content: center;     
+  min-height: 100vh;            
+  background-color: white;
+  color: black;
+  font-family: 'Inter', sans-serif;
+  background: linear-gradient(to right, #eceaea, #e4e6e5);
+  color: #333;
+  padding: 10px;
+  margin: 10px;
+           
+
+}
+
+/*
+articulo 2
+*/
+.ar2 {
+  display: flex;
+  flex-direction: column;       
+  align-items: center;          
+  justify-content: center;      
+  min-height: 100vh;           
+  background-color: white;
+  color: black;
+  font-family: 'Inter', sans-serif;
+  background: linear-gradient(to right, #eceaea, #e4e6e5);
+  color: #333;
+  padding: 10px;
+  margin: 10px;
+
+}
+
+/*
+footer
+*/
+.pie {
+
+color :black
+font-family: 'Inter', sans-serif;
+  color: black;
+  grid-template-rows: 
+  
+}
+
+/*
+redes sociales
+*/
+
+.social-menu {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 30px;
+}
+
+.social-menu a {
+  text-decoration: none;
+  font-size: 24px;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  background: #f1f1f1;
+  color: #333;
+  text-align: center;
+  border-radius: 50%;
+  transition: 0.3s ease;
+}
+
+.social-menu a:hover {
+  background: #333;
+  color: #fff;
+}
+
+/* Colores específicos opcionales */
+.facebook:hover { background: #3b5998; }
+.twitter:hover { background: #1da1f2; }
+.instagram:hover { background: #e1306c; }
+.linkedin:hover { background: #0077b5; }
