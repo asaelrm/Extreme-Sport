@@ -9,35 +9,42 @@ Extreme Sport
 
 }
 
+:root {
+  --primary-color: #3799aa;
+  --text-color: #333;
+  --bg-light: #ffffff;
+  --bg-gradient: linear-gradient(to right, #376292, #39728d);
+}
+
 .MenuH a{
     background-color: rgb(255, 255, 255);
-    float: center;
     color: #3799aa;
     text-decoration: none;
     width: 100px;
     text-align: center;
     padding: 10px;
+    border-radius: 15px;    /* Bordes redondeados */
+   font-size: clamp(1rem, 1.5vw, 2rem); /* sin espacios en clamp() */
+    border: 1px solid #ccc; /* Borde */
+    
+      
 }
 
 .MenuH a:hover{
     background-color: white;
     color:black;
+    transform: scale(1.2); /* Efecto zoom */
+    font-size: clamp(1rem, 1.5vw, 2rem); /* sin espacios en clamp() */
+
 }
   
 /*
   color de pagina
   */
   body {
-    background-color: #378bb3;
-    color: black;
-      font-family: 'Inter', poppins, sans-serif;
-      background: linear-gradient(to right, #376292, #39728d);
-       color: #ffffff;
-       min-height: 20vh;
-         justify-content: center;
-         align-items: center;
-          padding: 5%;
-          margin: 5%;
+    background: var(--bg-gradient);
+  color: var(--text-color);
+  font-family: 'Inter', 'Poppins', sans-serif;
         
   }
 
@@ -46,11 +53,11 @@ Extreme Sport
   color: black;
   padding: 10px;
   position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-family: 'Inter', poppins, sans-serif;
-    width: <= 600px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Inter', poppins, sans-serif;
+  max-width: <=600px;
 }
 
 section {
@@ -63,7 +70,7 @@ section {
   background-color: white;
     color: black;
     display: flex;
-        font-family: 'Inter', poppins, sans-serif;
+        font-family: 'poppins' sans-serif;
         font-size: clamp (1rem, 6vw, 6rem);
       background: linear-gradient(to right, #eceaea, #e4e6e5);
        color: #333;
@@ -116,10 +123,12 @@ footer
 */
 .pie {
 
-color :black
-font-family: 'Inter', sans-serif;
+color: black;
+font-family: 'Inter', poppins, sans-serif;
+background: linear-gradient(to right, #378bb3, #378bb3);
+color: #333;
+padding: 10px;
   color: black;
-  grid-template-rows: 
   
 }
 
@@ -157,3 +166,126 @@ redes sociales
 .twitter:hover { background: #1da1f2; }
 .instagram:hover { background: #e1306c; }
 .linkedin:hover { background: #0077b5; }
+
+/* 
+stylo para img
+*/
+.img1 {
+  width: 600px;
+  height: auto;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  border: 2px solid #ccc;
+  transition: transform 0.3s ease;
+}
+
+.img1:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.5);
+  opacity: 0.8;
+}
+
+.img2 {
+  width: 600px;
+  height: auto;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  border: 2px solid #ccc;
+  transition: transform 0.3s ease;
+} 
+
+.img2:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.5);
+  opacity: 0.8;
+} 
+
+/* 
+stylo para video
+*/
+
+.vd1 {
+ width: 600px;
+  height: auto;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  border: 2px solid #ccc;
+  transition: transform 0.3s ease;
+}
+
+.vd1:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.5);
+  opacity: 0.8;
+}
+
+.vd2 {
+  width: 600px;
+  height: auto;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  border: 2px solid #ccc;
+  transition: transform 0.3s ease;
+}
+
+.vd2:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.5);
+  opacity: 0.8;
+}
+
+
+.vd1 {
+  position: relative;
+  height: 100%;
+  padding-bottom: 0.%; /* 16:9 Aspect Ratio */
+  width: 100%;
+  overflow: hidden;
+  max-width: 50%;
+}
+
+.vd1 iframe {
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  width: 100%;
+  height:100%;
+}
+
+.vd2 {
+  position: relative;
+  height: 100%;
+  padding-bottom: 0.%; /* 16:9 Aspect Ratio */
+  width: 100%;
+  overflow: hidden;
+  max-width: 50%;
+}
+
+.vd2 iframe {
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  width: 100%;
+  height: 100%;
+}
+
+/*
+estilo de media
+*/
+@media (max-width: 768px) {
+  .img1, .img2, .vd1, .vd2 {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  nav {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .MenuH a {
+    width: auto;
+    padding: 10px 20px;
+    margin: 5px 0;
+  }
+}
