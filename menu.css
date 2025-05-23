@@ -17,21 +17,21 @@ Extreme Sport
 }
 
 .MenuH a{
-    background-color: rgb(255, 255, 255);
+    background-color: #ffffff;
     color: #3799aa;
     text-decoration: none;
     width: 100px;
     text-align: center;
     padding: 10px;
     border-radius: 15px;    /* Bordes redondeados */
-   font-size: clamp(1rem, 1.5vw, 2rem); /* sin espacios en clamp() */
+   font-size: clamp(1rem, 1.0vw, 2rem); /* sin espacios en clamp() */
     border: 1px solid #ccc; /* Borde */
     
       
 }
 
 .MenuH a:hover{
-    background-color: white;
+    background-color: #ffffff;
     color:black;
     transform: scale(1.2); /* Efecto zoom */
     font-size: clamp(1rem, 1.5vw, 2rem); /* sin espacios en clamp() */
@@ -49,7 +49,7 @@ Extreme Sport
   }
 
   nav {
-  background-color: white;
+  background-color: #ffffff;
   color: black;
   padding: 10px;
   position: relative;
@@ -61,22 +61,22 @@ Extreme Sport
 }
 
 section {
-  margin-top: 20px;
-  padding: 20px;
-  background-color: white;
+  margin-top: 100px;
+  padding: 100px;
+  background-color: #ffffff;
 }
 
 .noticias {
-  background-color: white;
+  background-color: #ffffff;
     color: black;
     display: flex;
         font-family: 'poppins' sans-serif;
-        font-size: clamp (1rem, 6vw, 6rem);
+        font-size: clamp (1rem, 1vw, 6rem);
       background: linear-gradient(to right, #eceaea, #e4e6e5);
-       color: #333;
+       color: #000000;
          justify-content: center;
          align-items: center;
-           padding: 20px;
+           padding: 10px;
 } 
 
 /*
@@ -92,7 +92,7 @@ articulo 1
   color: black;
   font-family: 'Inter', sans-serif;
   background: linear-gradient(to right, #eceaea, #e4e6e5);
-  color: #333;
+  color: #090808;
   padding: 10px;
   margin: 10px;
            
@@ -112,7 +112,7 @@ articulo 2
   color: black;
   font-family: 'Inter', sans-serif;
   background: linear-gradient(to right, #eceaea, #e4e6e5);
-  color: #333;
+  color: #000000;
   padding: 10px;
   margin: 10px;
 
@@ -171,7 +171,7 @@ redes sociales
 stylo para img
 */
 .img1 {
-  width: 600px;
+  width: 400px;
   height: auto;
   border-radius: 15px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
@@ -186,7 +186,7 @@ stylo para img
 }
 
 .img2 {
-  width: 600px;
+  width: 400px;
   height: auto;
   border-radius: 15px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
@@ -205,7 +205,7 @@ stylo para video
 */
 
 .vd1 {
- width: 600px;
+ width: 300px;
   height: auto;
   border-radius: 15px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
@@ -220,7 +220,7 @@ stylo para video
 }
 
 .vd2 {
-  width: 600px;
+  width: 300px;
   height: auto;
   border-radius: 15px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
