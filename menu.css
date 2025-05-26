@@ -16,6 +16,24 @@ Extreme Sport
   --bg-gradient: linear-gradient(to right, #376292, #39728d);
 }
 
+/*
+  color de pagina
+  */
+  body {
+  background: var(--bg-gradient);
+  color: var(--text-color);
+  font-family: 'Inter', 'Poppins', sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+        
+  }
+
+  main, section, .ar1, .ar2, .noticias {
+  max-width: 1200px;
+  width: 100%;
+}
+
 .MenuH a{
     background-color: #ffffff;
     color: #3799aa;
@@ -23,11 +41,14 @@ Extreme Sport
     width: 100px;
     text-align: center;
     padding: 10px;
-    border-radius: 15px;    /* Bordes redondeados */
-   font-size: clamp(1rem, 1.0vw, 2rem); /* sin espacios en clamp() */
-    border: 1px solid #ccc; /* Borde */
-    
-      
+    border-radius: 15px;
+    font-size: clamp(1rem, 1.0vw, 2rem);
+    border: 1px solid #ccc;
+     /* Borde */          :;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
 }
 
 .MenuH a:hover{
@@ -38,15 +59,6 @@ Extreme Sport
 
 }
   
-/*
-  color de pagina
-  */
-  body {
-    background: var(--bg-gradient);
-  color: var(--text-color);
-  font-family: 'Inter', 'Poppins', sans-serif;
-        
-  }
 
   nav {
   background-color: #ffffff;
@@ -291,6 +303,35 @@ estilo de media
   }
 }
 
+@media (max-width: 480px) {
+  .carousel-container {
+    max-width: 100%;
+    padding: 0;
+  }
+
+  .carousel-item {
+    padding: 10px;
+    flex-direction: column;
+  }
+
+  .video-wrapper, .img1, .img2, .vd1, .vd2 {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+  }
+
+  section, .ar1, .ar2 {
+    padding: 20px;
+    margin: 0;
+  }
+
+  .MenuH a {
+    font-size: 0.9rem;
+    padding: 8px;
+  }
+}
+
+
 /* PRUEBA */
 
 .carousel-container {
@@ -372,3 +413,4 @@ estilo de media
   align-items: center;
   height: 100%;
 }
+
