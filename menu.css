@@ -17,6 +17,17 @@ Extreme Sport
 }
 
 /*
+Banner
+*/
+.news-ticker {
+  background: #f5f6f8;
+  color: #000000;
+  padding: 10px;
+  font-weight: bold;
+}
+
+
+/*
   color de pagina
   */
   body {
@@ -41,14 +52,13 @@ Extreme Sport
     width: 100px;
     text-align: center;
     padding: 10px;
-    border-radius: 15px;
-    font-size: clamp(1rem, 1.0vw, 2rem);
     border: 1px solid #ccc;
-     /* Borde */          :;
+     /* Borde */
     -webkit-border-radius: 15px;
     -moz-border-radius: 15px;
     -ms-border-radius: 15px;
     -o-border-radius: 15px;
+    border-radius: 15px;
 }
 
 .MenuH a:hover{
@@ -69,13 +79,28 @@ Extreme Sport
   justify-content: center;
   align-items: center;
   font-family: 'Inter', poppins, sans-serif;
-  max-width: <=600px;
+  font-size: clamp(1rem, 1.0vw, 2rem);
+  border: 1px solid #ccc;
+  /* Borde */
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
+  border-radius: 15px;
 }
 
 section {
   margin-top: 100px;
   padding: 100px;
   background-color: #ffffff;
+    font-size: clamp(1rem, 1.0vw, 2rem);
+    border: 1px solid #ccc;
+     /* Borde */
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+  border-radius: 15px;
 }
 
 .noticias {
@@ -89,6 +114,14 @@ section {
          justify-content: center;
          align-items: center;
            padding: 10px;
+    font-size: clamp(1rem, 1.0vw, 2rem);
+    border: 1px solid #ccc;
+     /* Borde */
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+    border-radius: 15px;
 } 
 
 /*
@@ -107,6 +140,13 @@ articulo 1
   color: #090808;
   padding: 10px;
   margin: 10px;
+  border: 1px solid #ccc;
+     /* Borde */
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+    border-radius: 15px;
            
 
 }
@@ -127,6 +167,13 @@ articulo 2
   color: #000000;
   padding: 10px;
   margin: 10px;
+  border: 1px solid #ccc;
+     /* Borde */
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+    border-radius: 15px;
 
 }
 
@@ -141,6 +188,14 @@ background: linear-gradient(to right, #3189b3, #378bb3);
 color: #333;
 padding: 10px;
   color: black;
+    font-size: clamp(1rem, 1.0vw, 2rem);
+    border: 1px solid #ccc;
+     /* Borde */
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+    border-radius: 15px;
   
 }
 
@@ -287,7 +342,7 @@ estilo de media
 */
 @media (max-width: 768px) {
   .img1, .img2, .vd1, .vd2 {
-    width: 100%;
+    width: 200%;
     max-width: 100%;
   }
 
@@ -303,7 +358,7 @@ estilo de media
   }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 600px) {
   .carousel-container {
     max-width: 100%;
     padding: 0;
@@ -321,8 +376,9 @@ estilo de media
   }
 
   section, .ar1, .ar2 {
-    padding: 20px;
-    margin: 0;
+    padding: 10px;
+    margin: 0px;
+    font-size: clamp(0.8rem, 1.0vw, 1.5rem);
   }
 
   .MenuH a {
@@ -337,9 +393,9 @@ estilo de media
 .carousel-container {
   position: relative;
   max-width: 90%;
-  margin: 5% auto;
+  margin: 1% auto;
   overflow: hidden;
-  border-radius: 15px;
+  border-radius: 1px;
   background: #3189b3;
   box-shadow: 0 4px 5px rgba(0,0,0,0.3);
   transition: height 0.3s ease;
@@ -355,7 +411,7 @@ estilo de media
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 30px;
+  padding: 40px;
 }
 
 .carousel-btn {
@@ -413,4 +469,3 @@ estilo de media
   align-items: center;
   height: 100%;
 }
-
