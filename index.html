@@ -5,9 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Extreme Sport</title>
     <link rel="stylesheet" href="menu.css">
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="stylesheet" href="carousel.css">
+    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="social.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <meta name="description" content="Noticias deportivas de última hora sobre béisbol, fútbol, tenis y más en Extreme Sport.">
+    
 </head>
   <body>
     <nav class="MenuH">
+  </button>
     <a href="">Inicio</a>
     <a href="">Baseball</a>
     <a href="">Futbol</a>
@@ -23,7 +34,7 @@
     <br>
      <section>
         <article class="ar1">
-            <h3>conecta cuadrangular y deja en el terreno a los Angelinos</h3>
+            <h2>conecta cuadrangular y deja en el terreno a los Angelinos</h2>
             <p>El antesalista Manny Machado extendió a 13 su racha de partidos consecutivos conectando de hit</p>
             <hr>
             <img src="IMG/fernando.jpg" class="img1" alt="Fernando Tatis Jr. celebrando un jonrón"/>
@@ -65,8 +76,8 @@
              </div>
 
              </div>
-             <button class="carousel-btn prev" id="prevBtn">&#10094;</button>
-             <button class="carousel-btn next" id="nextBtn">&#10095;</button>
+             <button class="carousel-btn prev" id="prevBtn" aria-label="Anterior">&#10094;</button>
+             <button class="carousel-btn next" id="nextBtn" aria-label="Anterior">&#10095;</button>
              <div class="carousel-indicators" id="carouselIndicators"></div>
              </div>
              </section>
@@ -110,8 +121,8 @@
              </div>
 
              <!-- Botones -->
-             <button class="carousel-btn prev" id="prevBtn2">&#10094;</button>
-             <button class="carousel-btn next" id="nextBtn2">&#10095;</button>
+             <button class="carousel-btn prev" id="prevBtn" aria-label="Anterior">&#10094;</button>
+             <button class="carousel-btn next" id="nextBtn" aria-label="Anterior">&#10095;</button>
     
              <!-- Indicadores -->
              <div class="carousel-indicators" id="carouselIndicators2"></div>
@@ -129,8 +140,6 @@
 
     <div class="inline-footer"><small>Dirección: Calle 123, Santo Domingo</small></div>
      </footer>
-
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
         
 <div class="social-menu">
@@ -208,11 +217,11 @@
 
 
 <!-- art 2 -->  
-<script>
+ <script>
   const slide2 = document.getElementById('carouselSlide2');
   const container2 = document.getElementById('carouselContainer2');
-  const prevBtn2 = document.getElementById('prevBtn2');
-  const nextBtn2 = document.getElementById('nextBtn2');
+  const prevBtn2 = container2.querySelector('.carousel-btn.prev');
+  const nextBtn2 = container2.querySelector('.carousel-btn.next');
   const slides2 = slide2.children;
   const totalSlides2 = slides2.length;
   const indicatorsContainer2 = document.getElementById('carouselIndicators2');
@@ -272,5 +281,6 @@
   container2.addEventListener('mouseleave', startAutoSlide2);
 </script>
 
-</body> 
+</body>
 </html>
+
