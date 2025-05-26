@@ -16,6 +16,10 @@
     <meta name="description" content="Noticias deportivas de última hora sobre béisbol, fútbol, tenis y más en Extreme Sport.">
     
 </head>
+<div class="news-ticker">
+  <marquee behavior="scroll" direction="left">🚨 Última hora: Fernando Tatis Jr. conecta jonrón para ganar el juego... | Knicks eliminan a Celtics y avanzan a la final de conferencia 🚀</marquee>
+</div>
+<br>
   <body>
     <nav class="MenuH">
   </button>
@@ -76,8 +80,8 @@
              </div>
 
              </div>
-             <button class="carousel-btn prev" id="prevBtn" aria-label="Anterior">&#10094;</button>
-             <button class="carousel-btn next" id="nextBtn" aria-label="Anterior">&#10095;</button>
+             <button class="carousel-btn prev" id="prevBtn1" aria-label="Anterior">&#10094;</button>
+             <button class="carousel-btn next" id="nextBtn1" aria-label="Siguiente">&#10095;</button>
              <div class="carousel-indicators" id="carouselIndicators"></div>
              </div>
              </section>
@@ -121,8 +125,8 @@
              </div>
 
              <!-- Botones -->
-             <button class="carousel-btn prev" id="prevBtn" aria-label="Anterior">&#10094;</button>
-             <button class="carousel-btn next" id="nextBtn" aria-label="Anterior">&#10095;</button>
+             <button class="carousel-btn prev" id="prevBtn2" aria-label="Anterior">&#10094;</button>
+             <button class="carousel-btn next" id="nextBtn2" aria-label="Siguiente">&#10095;</button>
     
              <!-- Indicadores -->
              <div class="carousel-indicators" id="carouselIndicators2"></div>
@@ -148,14 +152,14 @@
     <a href="https://twitter.com" target="_blank" rel="noopener" class="twitter" title="Twitter"><i class="fab fa-twitter"></i></a>
     <a href="https://instagram.com" target="_blank" rel="noopener" class="instagram" title="Instagram"><i class="fab fa-instagram"></i></a>
     <a href="https://linkedin.com" target="_blank" rel="noopener" class="linkedin" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-    <a href="https://wa.me/18494506497" class="whatsapp-float" target="_blank" title="Escríbenos por WhatsApp"> <i class="fab fa-whatsapp"></i></a>
+    <a href="https://wa.me/18494506497" class="whatsapp-float" target="_blank" rel="noopener" title="Escríbenos por WhatsApp"> <i class="fab fa-whatsapp"></i></a>
 </div>
 
  <script>
   const slide = document.getElementById('carouselSlide');
   const container = document.getElementById('carouselContainer');
-  const prevBtn = document.getElementById('prevBtn');
-  const nextBtn = document.getElementById('nextBtn');
+  const prevBtn = document.getElementById('prevBtn1');
+  const nextBtn = document.getElementById('nextBtn1');
   const slides = slide.children;
   const totalSlides = slides.length;
   const indicatorsContainer = document.getElementById('carouselIndicators');
@@ -220,8 +224,8 @@
  <script>
   const slide2 = document.getElementById('carouselSlide2');
   const container2 = document.getElementById('carouselContainer2');
-  const prevBtn2 = container2.querySelector('.carousel-btn.prev');
-  const nextBtn2 = container2.querySelector('.carousel-btn.next');
+  const prevBtn2 = document.getElementById('prevBtn2');
+  const nextBtn2 = document.getElementById('nextBtn2');
   const slides2 = slide2.children;
   const totalSlides2 = slides2.length;
   const indicatorsContainer2 = document.getElementById('carouselIndicators2');
@@ -283,4 +287,5 @@
 
 </body>
 </html>
+
 
